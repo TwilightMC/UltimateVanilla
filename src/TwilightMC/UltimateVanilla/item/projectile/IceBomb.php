@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TwilightMC\UltimateVanilla\item;
+namespace TwilightMC\UltimateVanilla\item\projectile;
 
 use TwilightMC\UltimateVanilla\entity\projectile\IceBomb as IceBombEntity;
 use pocketmine\entity\Location;

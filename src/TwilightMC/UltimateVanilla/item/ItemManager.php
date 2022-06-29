@@ -12,6 +12,8 @@ use pocketmine\inventory\CreativeInventory;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\ItemIdentifier as IID;
 use pocketmine\item\ItemIds;
+use TwilightMC\UltimateVanilla\item\projectile\IceBomb;
+use TwilightMC\UltimateVanilla\item\projectile\Trident;
 
 final class ItemManager{
 

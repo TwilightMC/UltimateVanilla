@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TwilightMC\UltimateVanilla\item;
+namespace TwilightMC\UltimateVanilla\item\projectile;
 
 use pocketmine\entity\Entity;
 use pocketmine\entity\Location;

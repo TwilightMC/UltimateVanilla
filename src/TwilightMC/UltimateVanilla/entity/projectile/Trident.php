@@ -11,7 +11,7 @@ use pocketmine\entity\projectile\Projectile;
 use pocketmine\math\RayTraceResult;
 use pocketmine\network\mcpe\protocol\PlaySoundPacket;
 use pocketmine\network\mcpe\protocol\TakeItemActorPacket;
-use TwilightMC\UltimateVanilla\item\Trident as TridentItem;
+use TwilightMC\UltimateVanilla\item\projectile\Trident as TridentItem;
 use pocketmine\item\Item;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
