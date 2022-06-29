@@ -52,6 +52,13 @@ class Trident extends Tool implements Releasable{
 				-$location->pitch
 		), $player, CompoundTag::create()->setTag(self::TAG_TRIDENT, $this->nbtSerialize()));
 		$projectile->setMotion($player->getDirectionVector()->multiply($force));
+
+		$projectileEv = new ProjectileLaunchEvent($projectile);
+		if($projectileEv->isCancelled()){
+			$projectile->flagForDespawn();
+			return ItemUseResult::FAIL();
+		}
+
 		$projectile->spawnToAll();
 
 		if($player->hasFiniteResources()){
