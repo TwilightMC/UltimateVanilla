@@ -30,6 +30,7 @@ final class ItemManager{
 	public function __construct(){
 		(function(): void{
 			$this->register(new Trident(new IID(ItemIds::TRIDENT, 0), 'Trident'));
+			$this->register(new IceBomb(new IID(ItemIds::ICE_BOMB, 0), 'IceBomb'));
 		})->call(ItemFactory::getInstance());
 
 		$this->registerAllCreativeItems();

@@ -13,6 +13,7 @@ use pocketmine\entity\EntityFactory;
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\world\World;
+use TwilightMC\UltimateVanilla\entity\projectile\IceBomb;
 use TwilightMC\UltimateVanilla\entity\projectile\Trident;
 
 final class EntityManager{
@@ -22,6 +23,9 @@ final class EntityManager{
 			$this->register(Trident::class, function(World $world, CompoundTag $nbt): Trident{
 				return new Trident(Helper::parseLocation($nbt, $world), null, $nbt);
 			}, ['Trident', EntityIds::THROWN_TRIDENT, 'minecraft:trident']);
+			$this->register(IceBomb::class, function(World $world, CompoundTag $nbt): IceBomb{
+				return new IceBomb(Helper::parseLocation($nbt, $world), null, $nbt);
+			}, ['IceBomb', EntityIds::ICE_BOMB]);
 		})->call(EntityFactory::getInstance());
 	}
 }
